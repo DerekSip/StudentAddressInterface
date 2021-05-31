@@ -21,7 +21,8 @@ Name: Derek Siperko
             }
             else
             {
-                $sql = "insert into addresses values (" . $_POST['studentid'] . ",'" . 
+                $sql = "insert into addresses (studentid,firstname,lastname,street,city,state,zip) "
+                        . "values (" . $_POST['studentid'] . ",'" . 
                         $_POST['firstname'] . "','" . $_POST['lastname'] . "','" . $_POST['street'] .
                         "','" . $_POST['city'] . "','" . $_POST['state'] . "','" . $_POST['zip'] . "');";
                 echo "SQL statement is $sql<br/>";
